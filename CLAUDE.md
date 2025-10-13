@@ -9,7 +9,7 @@ This is a personal academic website/portfolio hosted on GitHub Pages (mthodi.git
 1. **Public Portfolio**: Research, publications, datasets, and technical blog
 2. **Private Career Management**: CVs, job applications, and knowledge base (git-ignored)
 
-**Research Focus**: PhD work on optimizing peering decisions using deep reinforcement learning, BGP, and network optimization.
+**PhD Research Focus**: PhD work on optimizing peering decisions using causal machine learning, BGP, and network optimization. The is an intersection of Internet measurements, machine learning, and network protocols.
 
 ## Architecture
 

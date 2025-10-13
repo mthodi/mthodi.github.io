@@ -70,6 +70,50 @@ body {
     padding-top: 60px !important;
 }
 
+/* Dark Mode Toggle Button */
+.dark-mode-btn {
+    background: none;
+    border: 1px solid #8B0000;
+    color: #8B0000;
+    cursor: pointer;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.2s;
+    line-height: 1;
+}
+
+.dark-mode-btn:hover {
+    background-color: #8B0000;
+    color: white;
+}
+
+/* Dark mode navbar styles */
+.latex-dark .navbar {
+    background-color: #1a1a1a;
+    border-bottom-color: #333;
+}
+
+.latex-dark .nav-home,
+.latex-dark .nav-links a {
+    color: #e5e5e5;
+}
+
+.latex-dark .nav-home:hover,
+.latex-dark .nav-links a:hover {
+    color: #ffffff;
+}
+
+.latex-dark .dark-mode-btn {
+    border-color: #e5e5e5;
+    color: #e5e5e5;
+}
+
+.latex-dark .dark-mode-btn:hover {
+    background-color: #e5e5e5;
+    color: #1a1a1a;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .nav-container {

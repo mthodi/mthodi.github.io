@@ -26,6 +26,7 @@
                 <li><a href="publications/index.html">publications</a></li>
                 <li><a href="datasets/index.html">datasets</a></li>
                 <li><a href="blog/index.html">blog</a></li>
+                <li><button id="dark-mode-toggle" class="dark-mode-btn">🌓</button></li>
             </ul>
         </div>
     </nav>
@@ -33,9 +34,14 @@
     <!-- Main Content -->
     <main class="content" id="main-content">
         <h2>About</h2>
-        <p>Finishing up my PhD at the University of Cape Town, specializing in optimizing peering decisions using causal machine learning.
-          My research focuses on applying machine learning techniques to network optimization, particularly in the areas of
-          BGP peering and inter-domain routing.</p>
+        <p>I am a PhD candidate at the University of Cape Town specializing in Internet measurement and network optimization.
+          My research focuses on building large-scale measurement systems to analyze Internet infrastructure, with expertise in
+          BGP routing analysis, CDN locality measurement, and IP geolocation. I develop data-driven models using machine learning
+          and causal inference to optimize peering decisions and improve network interconnection strategies.</p>
+
+        <p>Currently finalizing my PhD thesis. I also teach undergraduate courses in Network Engineering and Computer Networks at the University of Malawi.</p>
+
+        <p><a href="experience.html">View my professional experience and skills →</a></p>
 
         <h2>Updates</h2>
         <ul>
@@ -72,9 +78,32 @@
         <p><a href="publications/index.html">View all publications →</a></p>
 
         <h2>Contact</h2>
-        <p><strong>Email:</strong> mart AT gmail.com<br>
+        <p><strong>Email:</strong> martthodi238 AT gmail.com<br>
         <strong>GitHub:</strong> <a href="https://github.com/mthodi">https://github.com/mthodi</a><br>
         <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?hl=en&user=VEJ27YgAAAAJ&view_op=list_works&sortby=pubdate">View Profile</a></p>
     </main>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+        // Check for saved dark mode preference or default to light mode
+        const currentMode = localStorage.getItem('darkMode');
+        if (currentMode === 'enabled') {
+            document.body.classList.add('latex-dark');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('latex-dark');
+
+            // Save the user's preference
+            if (document.body.classList.contains('latex-dark')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
 </body>
 </html>

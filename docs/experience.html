@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Experience - Martin Thodi</title>
+
+    <!-- LaTeX.css for styling -->
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+
+    <!-- Custom navbar styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- MathJax for math rendering -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-home">Martin Thodi</a>
+            <ul class="nav-links">
+                <li><a href="index.html">about</a></li>
+                <li><a href="publications/index.html">publications</a></li>
+                <li><a href="datasets/index.html">datasets</a></li>
+                <li><a href="blog/index.html">blog</a></li>
+                <li><button id="dark-mode-toggle" class="dark-mode-btn">🌓</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Professional Experience & Skills</h1>
+
+        <p class="author">
+            PhD Candidate specializing in Internet measurement, network optimization, and large-scale data systems.
+            Currently finalizing thesis at the University of Cape Town.
+        </p>
+
+        <div class="abstract">
+            <h2>Summary</h2>
+            <p>
+                Experienced researcher and software engineer with expertise in building large-scale Internet measurement platforms,
+                analyzing network protocols, and developing data-driven optimization models. Strong background in distributed systems,
+                machine learning, and privacy-conscious measurement methodologies.
+            </p>
+        </div>
+
+        <h2>Professional Experience</h2>
+
+        <h3>Internet Society Pulse Research Fellow</h3>
+        <p><em>Internet Society & University of Cape Town | February 2025 - November 2025</em></p>
+        <ul>
+            <li>Designed and built a large-scale Internet measurement platform to quantify CDN locality and content delivery patterns across countries and autonomous systems</li>
+            <li>Engineered end-to-end data pipeline using Python and Playwright for browser automation, capturing and processing thousands of HTTP Archive files from distributed vantage points</li>
+            <li>Implemented dual-method geolocation system combining geo-localized DNS-over-HTTPS resolution with CDN-specific HTTP header parsing</li>
+            <li>Orchestrated distributed traceroute measurements using RIPE Atlas probe network and GlobalPing API for AS-level topology mapping</li>
+            <li>Developed specialized handlers for streaming platforms (Netflix Fast.com API, YouTube) to extract platform-specific locality metrics</li>
+        </ul>
+
+        <h3>PhD Researcher - Internet Measurement & Network Optimization</h3>
+        <p><em>University of Cape Town (Net4D Lab) | June 2022 - Present</em></p>
+        <ul>
+            <li>Built robust BGP data processing pipeline analyzing 8+ years of longitudinal routing data from 46 African Internet Exchange Points</li>
+            <li>Developed machine learning models achieving F1-score > 0.82 to predict peering agreement likelihood</li>
+            <li>Implemented causal inference framework using T-learner meta-algorithm to estimate impact of infrastructure investments</li>
+            <li>Designed data pipeline integrating PeeringDB, CAIDA ASRank, RIPE Atlas, and IXPDB</li>
+            <li>Published research at ACM IMC, IEEE CloudNet, and SATNAC conferences</li>
+        </ul>
+
+        <h3>Lead Software Engineer</h3>
+        <p><em>eCRG Consulting | January 2019 - May 2022</em></p>
+        <ul>
+            <li>Developed automated weather-based agricultural advisory system for UNDP Malawi and Ministry of Agriculture</li>
+            <li>Built deep learning pipeline using Python and PyTorch to digitize 40+ years of handwritten climate records for UN FAO Malawi</li>
+            <li>Led team of 5 developers managing full-stack web development projects with agile methodologies</li>
+        </ul>
+
+        <h3>Lecturer in Network Engineering</h3>
+        <p><em>University of Malawi | May 2019 - Present (on study leave)</em></p>
+        <ul>
+            <li>Teaching undergraduate courses in Network Engineering, Computer Networks, Routing & Switching</li>
+        </ul>
+
+        <h2>Technical Skills</h2>
+
+        <h3>Internet Measurement & Network Analysis</h3>
+        <ul>
+            <li><strong>Network Protocols:</strong> BGP, DNS, HTTP/HTTPS, TCP/IP, TLS, DNS-over-HTTPS</li>
+            <li><strong>Measurement Tools:</strong> RIPE Atlas, GlobalPing, browser automation (Playwright), residential proxy networks</li>
+            <li><strong>CDN Analysis:</strong> Content locality measurement, geo-hint extraction, cache server identification</li>
+            <li><strong>AS-Level Topology:</strong> Traceroute analysis, peering relationship mapping, IXP analysis</li>
+            <li><strong>IP Geolocation:</strong> MaxMind GeoIP, IP2Location, multi-method validation</li>
+        </ul>
+
+        <h3>Software Engineering & Data Systems</h3>
+        <ul>
+            <li><strong>Programming Languages:</strong> Python (primary), JavaScript, Java, Bash scripting</li>
+            <li><strong>Data Engineering:</strong> Large-scale data pipelines, SQL (PostgreSQL, MySQL), DuckDB, PySpark</li>
+            <li><strong>Web Technologies:</strong> Flask, FastAPI, Django, Express.js, VueJS, REST APIs</li>
+            <li><strong>Development Tools:</strong> Git, Linux/Unix, distributed systems architecture</li>
+            <li><strong>Browser Automation:</strong> Playwright, Selenium, HTTP Archive (HAR) processing</li>
+        </ul>
+
+        <h3>Machine Learning & Data Analysis</h3>
+        <ul>
+            <li><strong>Classical ML:</strong> Random Forest, classification models, feature engineering</li>
+            <li><strong>Causal Inference:</strong> T-learner meta-algorithm, CATE estimation, treatment effect analysis</li>
+            <li><strong>Model Interpretability:</strong> SHAP (Shapley Additive Explanations)</li>
+            <li><strong>Deep Learning:</strong> PyTorch, computer vision, sequence models</li>
+        </ul>
+
+        <h3>Research & Communication</h3>
+        <ul>
+            <li><strong>Scientific Writing:</strong> Academic publications, technical reports, documentation</li>
+            <li><strong>Presentations:</strong> International conferences (ACM IMC, IEEE CloudNet, SATNAC, TMA PhD School)</li>
+            <li><strong>Data Visualization:</strong> Creating compelling visualizations for technical and business audiences</li>
+            <li><strong>Collaboration:</strong> Cross-functional teamwork, academic-industry partnerships</li>
+        </ul>
+
+        <h2>Key Projects</h2>
+
+        <h3>Internet Content Locality Measurement Platform</h3>
+        <p>
+            Built end-to-end measurement system using distributed vantage points, browser automation, and multi-method geolocation
+            validation to analyze CDN deployment and content delivery optimization strategies across countries and autonomous systems.
+        </p>
+
+        <h3>BGP Routing Analysis Pipeline</h3>
+        <p>
+            Developed large-scale data pipeline processing longitudinal BGP routing data from public route collectors,
+            analyzing AS-level topology and interconnection behavior at Internet Exchange Points over 8+ years.
+        </p>
+
+        <h3>Peering Decision Optimization Framework</h3>
+        <p>
+            Created predictive and causal ML models to quantify factors influencing peering relationships,
+            providing data-driven insights for infrastructure investment decisions.
+        </p>
+
+        <h2>Education</h2>
+
+        <h3>PhD Candidate, Computer Science</h3>
+        <p><em>University of Cape Town, South Africa | June 2022 - Present</em></p>
+        <p>
+            Dissertation: Data-driven optimization of peering decisions using machine learning, BGP routing analysis,
+            and Internet topology modeling. Finalizing thesis.
+        </p>
+
+        <h3>M.Eng., Information Engineering</h3>
+        <p><em>Hiroshima University, Japan | 2015 - 2018</em></p>
+        <p>Research focus: Distributed Systems and Conflict-Free Replicated Data Types</p>
+
+        <h3>Bachelor of Computer Science</h3>
+        <p><em>University of Malawi | 2009 - 2013</em></p>
+
+        <hr>
+
+        <p><a href="index.html">← Back to homepage</a></p>
+    </main>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        // Dark mode toggle functionality
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+        // Check for saved dark mode preference or default to light mode
+        const currentMode = localStorage.getItem('darkMode');
+        if (currentMode === 'enabled') {
+            document.body.classList.add('latex-dark');
+        }
+
+        darkModeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('latex-dark');
+
+            // Save the user's preference
+            if (document.body.classList.contains('latex-dark')) {
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    </script>
+</body>
+</html>
